@@ -1,119 +1,150 @@
 import { Question } from '../types';
 
 const questions: Question[] = [
-  // Easy questions
+  // HTML Questions (Easy)
   {
     id: 1,
-    text: "What is the capital of France?",
-    options: ["London", "Paris", "Berlin", "Madrid"],
-    correctAnswer: "Paris",
+    text: "What does HTML stand for?",
+    options: [
+      "Hyper Text Markup Language",
+      "High Tech Machine Language",
+      "Hyperlink and Text Management Language",
+      "Home Tool Markup Language",
+    ],
+    correctAnswer: "Hyper Text Markup Language",
     difficulty: "easy",
-    explanation: "Paris is the capital and most populous city of France.",
-    topic: "Geography"
+    explanation:
+      "HTML is the standard markup language for creating web pages.",
+    topic: "HTML",
   },
   {
     id: 2,
-    text: "What is 2 + 2?",
-    options: ["3", "4", "5", "6"],
-    correctAnswer: "4",
+    text: "Which HTML tag is used to define the structure of an HTML document?",
+    options: ["<body>", "<head>", "<html>", "<title>"],
+    correctAnswer: "<html>",
     difficulty: "easy",
-    explanation: "2 + 2 = 4 is a basic addition in mathematics.",
-    topic: "Mathematics"
+    explanation:
+      "The <html> tag is the root element and defines the entire HTML document.",
+    topic: "HTML",
   },
   {
     id: 3,
-    text: "Which of these is a fruit?",
-    options: ["Carrot", "Broccoli", "Apple", "Potato"],
-    correctAnswer: "Apple",
+    text: "Which HTML tag is used to insert an image?",
+    options: ["<image>", "<img>", "<picture>", "<src>"],
+    correctAnswer: "<img>",
     difficulty: "easy",
-    explanation: "An apple is a fruit, while the others are vegetables.",
-    topic: "Biology"
+    explanation: "The <img> tag is used to embed an image in an HTML page.",
+    topic: "HTML",
   },
   {
     id: 4,
-    text: "Which planet is closest to the Sun?",
-    options: ["Venus", "Earth", "Mercury", "Mars"],
-    correctAnswer: "Mercury",
+    text: "Which HTML tag is used to create a hyperlink?",
+    options: ["<link>", "<a>", "<url>", "<href>"],
+    correctAnswer: "<a>",
     difficulty: "easy",
-    explanation: "Mercury is the smallest and innermost planet in the Solar System.",
-    topic: "Astronomy"
+    explanation: "The <a> tag defines a hyperlink.",
+    topic: "HTML",
   },
 
-  // Medium questions
+  // CSS Questions (Medium)
   {
     id: 5,
-    text: "Who painted the Mona Lisa?",
-    options: ["Vincent van Gogh", "Pablo Picasso", "Leonardo da Vinci", "Michelangelo"],
-    correctAnswer: "Leonardo da Vinci",
+    text: "What does CSS stand for?",
+    options: [
+      "Cascading Style Sheets",
+      "Creative Style System",
+      "Computer Style Syntax",
+      "Colorful Style Script",
+    ],
+    correctAnswer: "Cascading Style Sheets",
     difficulty: "medium",
-    explanation: "The Mona Lisa was painted by Leonardo da Vinci between 1503 and 1519.",
-    topic: "Art"
+    explanation:
+      "CSS is used to style HTML elements.",
+    topic: "CSS",
   },
   {
     id: 6,
-    text: "What is the chemical symbol for gold?",
-    options: ["Go", "Gl", "Au", "Ag"],
-    correctAnswer: "Au",
+    text: "Which CSS property is used to change the text color of an element?",
+    options: ["text-color", "foreground-color", "color", "font-color"],
+    correctAnswer: "color",
     difficulty: "medium",
-    explanation: "The chemical symbol Au comes from the Latin word for gold, 'aurum'.",
-    topic: "Chemistry"
+    explanation:
+      "The 'color' property specifies the color of the text.",
+    topic: "CSS",
   },
   {
     id: 7,
-    text: "Which of these countries is NOT in Europe?",
-    options: ["Portugal", "Sweden", "Thailand", "Italy"],
-    correctAnswer: "Thailand",
+    text: "Which CSS property is used to control the spacing between lines of text?",
+    options: [
+      "line-spacing",
+      "text-spacing",
+      "line-height",
+      "vertical-spacing",
+    ],
+    correctAnswer: "line-height",
     difficulty: "medium",
-    explanation: "Thailand is located in Southeast Asia.",
-    topic: "Geography"
+    explanation:
+      "The 'line-height' property sets the distance between lines of text.",
+    topic: "CSS",
   },
   {
     id: 8,
-    text: "Who wrote 'Romeo and Juliet'?",
-    options: ["Charles Dickens", "William Shakespeare", "Jane Austen", "Mark Twain"],
-    correctAnswer: "William Shakespeare",
+    text: "Which CSS property is used to make the text bold?",
+    options: [
+      "font-weight: bold",
+      "text-style: bold",
+      "font-style: bold",
+      "text-weight: bold",
+    ],
+    correctAnswer: "font-weight: bold",
     difficulty: "medium",
-    explanation: "Romeo and Juliet is a tragedy written by William Shakespeare.",
-    topic: "Literature"
+    explanation:
+      "The 'font-weight' property with a value of 'bold' makes the text bold.",
+    topic: "CSS",
   },
 
-  // Hard questions
+  // JavaScript Questions (Hard)
   {
     id: 9,
-    text: "What is the speed of light in vacuum?",
-    options: ["299,792,458 m/s", "300,000,000 m/s", "330 m/s", "150,000,000 m/s"],
-    correctAnswer: "299,792,458 m/s",
+    text: "What is the output of `typeof null` in JavaScript?",
+    options: ["null", "object", "undefined", "number"],
+    correctAnswer: "object",
     difficulty: "hard",
-    explanation: "The speed of light in vacuum is exactly 299,792,458 meters per second.",
-    topic: "Physics"
+    explanation:
+      "In JavaScript, `typeof null` returns 'object', which is a known anomaly.",
+    topic: "JavaScript",
   },
   {
     id: 10,
-    text: "Which algorithm has the worst time complexity?",
-    options: ["Merge Sort", "Quick Sort (average case)", "Bubble Sort", "Binary Search"],
-    correctAnswer: "Bubble Sort",
+    text: "Which method is used to add an element to the end of an array?",
+    options: ["add()", "push()", "append()", "insertEnd()"],
+    correctAnswer: "push()",
     difficulty: "hard",
-    explanation: "Bubble Sort has a time complexity of O(n²), which is worse than the others mentioned.",
-    topic: "Computer Science"
+    explanation:
+      "The 'push()' method adds one or more elements to the end of an array and returns the new length of the array.",
+    topic: "JavaScript",
   },
   {
     id: 11,
-    text: "Which element has the atomic number 92?",
-    options: ["Uranium", "Plutonium", "Lead", "Thorium"],
-    correctAnswer: "Uranium",
+    text: "What is the output of `[1, 2, 3] + [4, 5, 6]` in JavaScript?",
+    options: ["[1, 2, 3, 4, 5, 6]", "[5, 7, 9]", "15", "1,2,34,5,6"],
+    correctAnswer: "1,2,34,5,6",
     difficulty: "hard",
-    explanation: "Uranium is a chemical element with symbol U and atomic number 92.",
-    topic: "Chemistry"
+    explanation:
+      "The + operator concatenates arrays into strings, resulting in comma-separated values.",
+    topic: "JavaScript",
   },
   {
     id: 12,
-    text: "In which year was the theory of general relativity published?",
-    options: ["1905", "1915", "1925", "1935"],
-    correctAnswer: "1915",
+    text:
+      "What is the result of the expression: `(false || true) && (true && false)`?",
+    options: ["true", "false", "undefined", "null"],
+    correctAnswer: "false",
     difficulty: "hard",
-    explanation: "Albert Einstein published the theory of general relativity in 1915.",
-    topic: "Physics"
-  }
+    explanation:
+      "The expression evaluates as follows: (false || true) is true, (true && false) is false, and true && false is false.",
+    topic: "JavaScript",
+  },
 ];
 
 export default questions;
